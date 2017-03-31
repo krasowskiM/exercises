@@ -9,7 +9,7 @@ import java.util.Stack;
 public class StackMachine {
 
     private void compute(String input) {
-        Stack<Integer> numbers = new Stack<>();
+        Stack<Integer> numbers = new Stack<Integer>();
         for (char c : input.toCharArray()) {
             if (Character.isDigit(c)) {
                 numbers.push(Character.getNumericValue(c));
@@ -25,7 +25,7 @@ public class StackMachine {
     }
 
     private void computeTwo(String input) {
-        Stack<Integer> numbers = new Stack<>();
+        Stack<Integer> numbers = new Stack<Integer>();
         int generalSum = 0;
         for (char c : input.toCharArray()) {
             if (Character.isDigit(c)) {
